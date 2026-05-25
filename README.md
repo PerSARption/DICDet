@@ -22,16 +22,22 @@ For VisDrone2019-DET:
 
 For VisDrone2019-DET dataset, please select the config file `ultralytics/cfg/datasets/VisDrone2019-DET.yaml`
 
-### Training/Resume Training
+For AI-TOD-v2 dataset, please select the config file `ultralytics/cfg/datasets/AI-TOD-v2.yaml`
 
-1. Set the model config and dataset config in `train.py`:
+For DOTA-v1.0 dataset, please select the config file `ultralytics/cfg/datasets/DOTA-v1.0.yaml`
+
+### Training
+
+1. Modify the dataset config to point to your data following the steps in **Data Prepare** part
+
+2. Set the model config and dataset config in `train.py`:
 
 ```python
 model = YOLO("DICDet-S.yaml")  # choose from DICDet-N / S / M / L / X
 model.train(data='ultralytics/cfg/datasets/VisDrone2019-DET.yaml', ...)
 ```
 
-2. Run the script:
+3. Run the script:
 
 ```python
 python train.py
@@ -40,8 +46,14 @@ python train.py
 ### Test
 
 1. Modify the dataset config to point to your data following the steps in **Data Prepare** part.
-2. Set your model path following the steps in **Training/Resume Training** part.
-3. Run the script:
+2. Set the model weight and dataset config in `test.py`:
+
+```python
+model = YOLO("...best.pt")  
+model.test(data='ultralytics/cfg/datasets/VisDrone2019-DET.yaml', ...)
+```
+
+4. Run the script:
 
 ```python
 python test.py
