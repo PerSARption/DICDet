@@ -7,8 +7,8 @@ This is an official implementation of **One Size Doesn't Fit All: Divide-and-Con
 ### Data Prepare
 
 - [VisDrone2019-DET](https://github.com/VisDrone/VisDrone-Dataset)
-- [DOTA-v1.0](https://captain-whu.github.io/DOTA/index.html)
 - [AI-TOD-v2](https://chasel-tsui.github.io/AI-TOD-v2/)
+- [DOTA-v1.0](https://captain-whu.github.io/DOTA/index.html)
 
 ```
 For VisDrone2019-DET:
