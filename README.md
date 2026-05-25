@@ -1,10 +1,8 @@
 # One Size Doesn't Fit All: Divide-and-Conquer Detector for UAV Images
 
-[Paper]() |
+## Introduction
 
-## Introduce
-
-This is an official implementation of **DICDet: One Size Doesn't Fit All: Divide-and-Conquer Detector for UAV Images** by **Pytorch**.
+This is an official implementation of **One Size Doesn't Fit All: Divide-and-Conquer Detector for UAV Images** by **Pytorch**.
 
 ### Data Prepare
 
@@ -18,27 +16,11 @@ For VisDrone2019-DET:
 --VisDrone2019-DET
 ----images (includes UAV images, .jpg)
 ----annotations (includes annotations, .txt)
-
-For DOTA-v1.0:
--datasets
---DOTA-v1.0
-----images (includes aerial images, .png)
-----labelTxt (includes annotations, .txt)
-
-For AI-TOD-v2:
--datasets
---AI-TOD-v2
-----images (includes aerial images, .png)
-----annotations (includes annotations, .txt)
 ```
 
 ### Config file selection
 
 For VisDrone2019-DET dataset, please select the config file `ultralytics/cfg/datasets/VisDrone2019-DET.yaml`
-
-For DOTA-v1.0 dataset, please select the config file `ultralytics/cfg/datasets/DOTAv1.yaml`
-
-For AI-TOD-v2 dataset, please select the config file `ultralytics/cfg/datasets/AI-TOD.yaml`
 
 ### Training/Resume Training
 
