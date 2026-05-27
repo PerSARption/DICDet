@@ -18,14 +18,14 @@ This is an official implementation of DICDet: **One Size Doesn't Fit All: Divide
 <table style="width:100%; text-align:center; border-collapse:collapse;">
   <thead>
     <tr>
-      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap; min-width:90px;">Model</th>
-      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">mAP<sup>val</sup><sub>50</sub>(%)</th>
-      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">mAP<sup>val</sup><sub>50:95</sub>(%)</th>
-      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">mAP<sup>test</sup><sub>50</sub>(%)</th>
-      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">mAP<sup>test</sup><sub>50:95</sub>(%)</th>
-      <th style="padding:8px; border:1px solid #ddd; font-weight:normal;">Params(M)</th>
-      <th style="padding:8px; border:1px solid #ddd; font-weight:normal;">FLOPs(G)</th>
-      <th style="padding:8px; border:1px solid #ddd; font-weight:normal;">Latency(ms)</th>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap; min-width:90px;">Model</td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;">mAP<sup>val</sup><sub style="margin-left:-1.2em;">50</sub><br>(%)</td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;">mAP<sup>val</sup><sub style="margin-left:-1.2em;">50:95</sub><br>(%)</td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;">mAP<sup>test</sup><sub style="margin-left:-1.5em;">50</sub><br>(%)</td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;">mAP<sup>test</sup><sub style="margin-left:-1.5em;">50:95</sub><br>(%)</td>
+      <td style="padding:8px; border:1px solid #ddd;">Params<br>(M)</td>
+      <td style="padding:8px; border:1px solid #ddd;">FLOPs<br>(G)</td>
+      <td style="padding:8px; border:1px solid #ddd;">Latency<br>(ms)</td>
     </tr>
   </thead>
   <tbody>
