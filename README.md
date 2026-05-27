@@ -2,7 +2,7 @@
 <h1>One Size Doesn't Fit All: Divide-and-Conquer Detector<br>for UAV Images</h1>
 </div>
 
-## Contents
+## Content
 - [Introduction](#introduction)
 - [Install](#install)
 - [Dataset](#dataset)
@@ -45,8 +45,9 @@ cd DICDet
 pip install -r requirements.txt
 ```
 
-## Dataset
+## Data Prepare
 
+### Dataset
 - [VisDrone2019-DET](https://github.com/VisDrone/VisDrone-Dataset)
 - [AI-TOD-v2](https://chasel-tsui.github.io/AI-TOD-v2/)
 - [DOTA-v1.0](https://captain-whu.github.io/DOTA/index.html)
