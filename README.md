@@ -53,7 +53,7 @@ model = YOLO("...best.pt")
 model.test(data='ultralytics/cfg/datasets/VisDrone2019-DET.yaml', ...)
 ```
 
-4. Run the script:
+3. Run the script:
 
 ```python
 python test.py
