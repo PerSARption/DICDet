@@ -1,8 +1,6 @@
 <div align="center">
-<h1>One Size Doesn't Fit All: Divide-and-Conquer Detector for UAV Images</h1>
+<h1>DICDet: One Size Doesn't Fit All: Divide-and-Conquer Detector for UAV Images</h1>
 </div>
-
-[Paper]() |
 
 ## Contents
 - [Introduction](#introduction)
@@ -23,10 +21,10 @@ We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably
   <thead>
     <tr>
       <th style="text-align:center; padding:8px; border:1px solid #ddd;">Model</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">mAP<sup>val</sup><sub>50</sub>(%)</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">mAP<sup>val</sup><sub>50:95</sub>(%)</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">mAP<sup>test</sup><sub>50</sub>(%)</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">mAP<sup>test</sup><sub>50:95</sub>(%)</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">$\text{mAP}^{\text{val}}_{50}$(%)</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">$\text{mAP}^{\text{val}}_{50:95}$(%)</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">$\text{mAP}^{\text{test}}_{50}$(%)</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">$\text{mAP}^{\text{test}}_{50:95}$(%)</th>
       <th style="text-align:center; padding:8px; border:1px solid #ddd;">Params(M)</th>
       <th style="text-align:center; padding:8px; border:1px solid #ddd;">FLOPs(G)</th>
       <th style="text-align:center; padding:8px; border:1px solid #ddd;">Latency(ms)</th>
