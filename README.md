@@ -2,8 +2,6 @@
 <h1>DICDet: One Size Doesn't Fit All: Divide-and-Conquer Detector<br>for UAV Images</h1>
 </div>
 
-[Paper]()
-
 ## Contents
 - [Introduction](#introduction)
 - [Install](#install)
