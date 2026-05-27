@@ -56,11 +56,16 @@ pip install -r requirements.txt
 DICDet follows the **YOLO format** for dataset annotations.
 
 ```
-For VisDrone2019-DET:
--datasets
---VisDrone2019-DET
-----images (includes UAV images, .jpg)
-----annotations (includes annotations, .txt)
+└── VisDrone
+    ├── VisDrone2019-DET-train
+    │   ├── images
+    │   └── labels
+    ├── VisDrone2019-DET-val
+    │   ├── images
+    │   └── labels
+    └── VisDrone2019-DET-test-dev
+        ├── images
+        └── labels
 ```
 
 ### Config file selection
