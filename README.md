@@ -16,7 +16,7 @@ We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably
 
 ### DICDet Performance on VisDrone2019-DET
 
-| Model | $\text{mAP}^{\text{val}}_{50}$(%) | $\text{mAP}^{\text{val}}_{50:95}$(%) | $\text{mAP}^{\text{test}}_{50}$(%) | $\text{mAP}^{\text{test}}_{50:95}$(%) | Params(M) | FLOPs(G) | Latency(ms) |
+| $\text{Model}$ | $\text{mAP}^{\text{val}}_{50}$(%) | $\text{mAP}^{\text{val}}_{50:95}$(%) | $\text{mAP}^{\text{test}}_{50}$(%) | $\text{mAP}^{\text{test}}_{50:95}$(%) | $\text{Params(M)}$ | $\text{FLOPs(G)}$ | $\text{Latency(ms)}$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DICDet-N | 36.6 | 21.7 | 29.6 | 17.0 | 1.5 | 6.8 | 3.7 |
 | DICDet-S | 42.7 | 25.8 | 35.0 | 20.4 | 5.3 | 22.7 | 4.7 |
