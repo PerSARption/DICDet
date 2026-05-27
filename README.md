@@ -5,7 +5,7 @@
 ## Contents
 - [Introduction](#introduction)
 - [Install](#install)
-- [Dataset](#dataset)
+- [Data Prepare](#data-prepare)
 - [Train](#train)
 - [Test](#test)
 
@@ -44,7 +44,7 @@ cd DICDet
 pip install -r requirements.txt
 ```
 
-## Dataset
+## Data Prepare
 
 - [VisDrone2019-DET](https://github.com/VisDrone/VisDrone-Dataset)
 - [AI-TOD-v2](https://chasel-tsui.github.io/AI-TOD-v2/)
@@ -79,7 +79,7 @@ For DOTA-v1.0 dataset, please select the config file `ultralytics/cfg/datasets/D
 
 ### Training
 
-1. Modify the dataset config to point to your data following the steps in **Data Prepare** part
+1. Modify the dataset config to point to your data following the steps in **Data Prepare** part.
 
 2. Set the model config and dataset config in `train.py`:
 
@@ -96,7 +96,7 @@ python train.py
 
 ### Test
 
-1. Modify the dataset config to point to your data following the steps in **Data Prepare** part.
+1. Modify the dataset config to point to your data following the steps in **Data Prepare** part..
 2. Set the model weight and dataset config in `test.py`:
 
 ```python
