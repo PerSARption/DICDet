@@ -11,7 +11,6 @@
 
 ## Introduction
 
-### Contributions
 This is an official implementation of DICDet: **One Size Doesn't Fit All: Divide-and-Conquer Detector for UAV Images** by Pytorch.
 
 ### DICDet Performance on VisDrone2019-DET
