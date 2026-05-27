@@ -7,7 +7,6 @@
 - [Install](#install)
 - [Dataset](#dataset)
 - [Train](#train)
-- [Model Config](#model-config)
 - [Test](#test)
 
 ## Introduction
@@ -86,10 +85,23 @@ We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably
 
 ## Install
 
+**Recommended Environment**
+- Python 3.8
+- CUDA 11.7
+- PyTorch 1.13.0
+
 ```shell
-git clone https://github.com/YOUYOUPark/DICDet.git
+# Create a new conda environment
+conda create -n dicdet python=3.8
+conda activate dicdet
+
+# Install PyTorch
+pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
+
+# Clone the repository and install dependencies
+git clone https://github.com/PerSARption/DICDet.git
 cd DICDet
-pip install -e ".[dev]"
+pip install -r requirements.txt
 ```
 
 ## Dataset
@@ -98,24 +110,16 @@ pip install -e ".[dev]"
 - [AI-TOD-v2](https://chasel-tsui.github.io/AI-TOD-v2/)
 - [DOTA-v1.0](https://captain-whu.github.io/DOTA/index.html)
 
+### Directory Structure of the Dataset
+
+DICDet follows the **YOLO format** for dataset annotations.
+
 ```
 For VisDrone2019-DET:
 -datasets
 --VisDrone2019-DET
 ----images (includes UAV images, .jpg)
 ----annotations (includes annotations, .txt)
-
-For AI-TOD-v2:
--datasets
---AI-TOD-v2
-----images (includes aerial images, .png)
-----annotations (includes annotations, .txt)
-
-For DOTA-v1.0:
--datasets
---DOTA-v1.0
-----images (includes aerial images, .png)
-----labelTxt (includes annotations, .txt)
 ```
 
 ### Config file selection
@@ -128,58 +132,35 @@ For DOTA-v1.0 dataset, please select the config file `ultralytics/cfg/datasets/D
 
 ## Train
 
-1. Set the model config and dataset config in `train.py`:
+### Training
+
+1. Modify the dataset config to point to your data following the steps in **Data Prepare** part
+
+2. Set the model config and dataset config in `train.py`:
 
 ```python
 model = YOLO("DICDet-S.yaml")  # choose from DICDet-N / S / M / L / X
 model.train(data='ultralytics/cfg/datasets/VisDrone2019-DET.yaml', ...)
 ```
 
-2. Run the script:
+3. Run the script:
 
-```shell
+```python
 python train.py
 ```
 
-## Model Config
+### Test
 
-<table style="text-align:center; margin:auto; border-collapse: collapse;">
-  <thead>
-    <tr style="background-color: #f5f5f5;">
-      <th style="padding: 8px; border: 1px solid #ddd;">Model</th>
-      <th style="padding: 8px; border: 1px solid #ddd;">Config</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">DICDet-N</td>
-      <td style="padding: 8px; border: 1px solid #ddd;"><a href="./ultralytics/cfg/models/DICDet/DICDet-N.yaml">DICDet-N.yaml</a></td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">DICDet-S</td>
-      <td style="padding: 8px; border: 1px solid #ddd;"><a href="./ultralytics/cfg/models/DICDet/DICDet-S.yaml">DICDet-S.yaml</a></td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">DICDet-M</td>
-      <td style="padding: 8px; border: 1px solid #ddd;"><a href="./ultralytics/cfg/models/DICDet/DICDet-M.yaml">DICDet-M.yaml</a></td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">DICDet-L</td>
-      <td style="padding: 8px; border: 1px solid #ddd;"><a href="./ultralytics/cfg/models/DICDet/DICDet-L.yaml">DICDet-L.yaml</a></td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">DICDet-X</td>
-      <td style="padding: 8px; border: 1px solid #ddd;"><a href="./ultralytics/cfg/models/DICDet/DICDet-X.yaml">DICDet-X.yaml</a></td>
-    </tr>
-  </tbody>
-</table>
+1. Modify the dataset config to point to your data following the steps in **Data Prepare** part.
+2. Set the model weight and dataset config in `test.py`:
 
-## Test
+```python
+model = YOLO("...best.pt")  
+model.test(data='ultralytics/cfg/datasets/VisDrone2019-DET.yaml', ...)
+```
 
-1. Modify the dataset config to point to your data following the steps in **Dataset** part.
-2. Set your model path following the steps in **Train** part.
 3. Run the script:
 
-```shell
+```python
 python test.py
 ```
