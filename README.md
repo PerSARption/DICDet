@@ -19,11 +19,11 @@ We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably
 <table style="text-align: center; caption-side: top; margin:auto; border-collapse: collapse;">
   <thead>
     <tr>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">Model</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">$\text{mAP}^{\text{val}}_{50}$(%)</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">$\text{mAP}^{\text{val}}_{50:95}$(%)</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">$\text{mAP}^{\text{test}}_{50}$(%)</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">$\text{mAP}^{\text{test}}_{50:95}$(%)</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd; white-space:nowrap;">Model</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>$\text{mAP}^{\text{val}}_{50}$(%)</b></th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>$\text{mAP}^{\text{val}}_{50:95}$(%)</b></th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>$\text{mAP}^{\text{test}}_{50}$(%)</b></th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>$\text{mAP}^{\text{test}}_{50:95}$(%)</b></th>
       <th style="text-align:center; padding:8px; border:1px solid #ddd;">Params(M)</th>
       <th style="text-align:center; padding:8px; border:1px solid #ddd;">FLOPs(G)</th>
       <th style="text-align:center; padding:8px; border:1px solid #ddd;">Latency(ms)</th>
@@ -31,7 +31,7 @@ We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably
   </thead>
   <tbody>
     <tr align="center">
-      <td style="padding:8px; border:1px solid #ddd;"><b>DICDet-N</b></td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>DICDet-N</b></td>
       <td style="padding:8px; border:1px solid #ddd;">36.6</td>
       <td style="padding:8px; border:1px solid #ddd;">21.7</td>
       <td style="padding:8px; border:1px solid #ddd;">29.6</td>
@@ -41,7 +41,7 @@ We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably
       <td style="padding:8px; border:1px solid #ddd;">3.7</td>
     </tr>
     <tr align="center">
-      <td style="padding:8px; border:1px solid #ddd;"><b>DICDet-S</b></td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>DICDet-S</b></td>
       <td style="padding:8px; border:1px solid #ddd;">42.7</td>
       <td style="padding:8px; border:1px solid #ddd;">25.8</td>
       <td style="padding:8px; border:1px solid #ddd;">35.0</td>
@@ -51,7 +51,7 @@ We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably
       <td style="padding:8px; border:1px solid #ddd;">4.7</td>
     </tr>
     <tr align="center">
-      <td style="padding:8px; border:1px solid #ddd;"><b>DICDet-M</b></td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>DICDet-M</b></td>
       <td style="padding:8px; border:1px solid #ddd;">46.2</td>
       <td style="padding:8px; border:1px solid #ddd;">28.4</td>
       <td style="padding:8px; border:1px solid #ddd;">37.7</td>
@@ -61,7 +61,7 @@ We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably
       <td style="padding:8px; border:1px solid #ddd;">6.4</td>
     </tr>
     <tr align="center">
-      <td style="padding:8px; border:1px solid #ddd;"><b>DICDet-L</b></td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>DICDet-L</b></td>
       <td style="padding:8px; border:1px solid #ddd;">47.5</td>
       <td style="padding:8px; border:1px solid #ddd;">29.4</td>
       <td style="padding:8px; border:1px solid #ddd;">38.5</td>
@@ -71,7 +71,7 @@ We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably
       <td style="padding:8px; border:1px solid #ddd;">8.4</td>
     </tr>
     <tr align="center">
-      <td style="padding:8px; border:1px solid #ddd;"><b>DICDet-X</b></td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>DICDet-X</b></td>
       <td style="padding:8px; border:1px solid #ddd;">49.1</td>
       <td style="padding:8px; border:1px solid #ddd;">30.8</td>
       <td style="padding:8px; border:1px solid #ddd;">40.3</td>
