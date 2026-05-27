@@ -1,5 +1,5 @@
 <div align="center">
-<h1>DICDet: One Size Doesn't Fit All: Divide-and-Conquer Detector for UAV Images</h1>
+<h1>One Size Doesn't Fit All: Divide-and-Conquer Detector for UAV Images</h1>
 </div>
 
 [Paper]() |
