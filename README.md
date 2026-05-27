@@ -1,8 +1,8 @@
 <div align="center">
-<h1>One Size Doesn't Fit All: Divide-and-Conquer Detector<br>for UAV Images</h1>
+<h1>DICDet: One Size Doesn't Fit All: Divide-and-Conquer Detector<br>for UAV Images</h1>
 </div>
 
-## Content
+## Contents
 - [Introduction](#introduction)
 - [Install](#install)
 - [Dataset](#dataset)
@@ -12,7 +12,7 @@
 ## Introduction
 
 ### Contributions
-We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably allocates computational resources. Firstly, a novel MRHNet as the backbone integrated with MRH module is proposed, which consists of multi-gradient flow, receptive field expansion, along with high-dimensional feature preservation. Secondly, a divide-and-conquer strategy guides the design of both the neck and head networks: a scale-specific neck network employs structures of different computation to process features of multi-size targets, and an asymmetric task-specific decoupled head is constructed to meet the feature requirements for localization and classification tasks respectively. Finally, we develop a new family of detectors with 5 model scales for UAV images: DICDet-N, S, M, L, and X.
+This is an official implementation of DICDet: **One Size Doesn't Fit All: Divide-and-Conquer Detector for UAV Images** by Pytorch.
 
 ### DICDet Performance on VisDrone2019-DET
 
@@ -45,9 +45,8 @@ cd DICDet
 pip install -r requirements.txt
 ```
 
-## Data Prepare
+## Dataset
 
-### Dataset
 - [VisDrone2019-DET](https://github.com/VisDrone/VisDrone-Dataset)
 - [AI-TOD-v2](https://chasel-tsui.github.io/AI-TOD-v2/)
 - [DOTA-v1.0](https://captain-whu.github.io/DOTA/index.html)
