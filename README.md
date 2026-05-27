@@ -16,72 +16,13 @@ We propose a divide-and-conquer detector (DICDet) for UAV images that reasonably
 
 ### DICDet Performance on VisDrone2019-DET
 
-<table style="text-align: center; caption-side: top; margin:auto; border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd; white-space:nowrap;">Model</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>$\text{mAP}^{\text{val}}_{50}$(%)</b></th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>$\text{mAP}^{\text{val}}_{50:95}$(%)</b></th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>$\text{mAP}^{\text{test}}_{50}$(%)</b></th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>$\text{mAP}^{\text{test}}_{50:95}$(%)</b></th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">Params(M)</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">FLOPs(G)</th>
-      <th style="text-align:center; padding:8px; border:1px solid #ddd;">Latency(ms)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr align="center">
-      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>DICDet-N</b></td>
-      <td style="padding:8px; border:1px solid #ddd;">36.6</td>
-      <td style="padding:8px; border:1px solid #ddd;">21.7</td>
-      <td style="padding:8px; border:1px solid #ddd;">29.6</td>
-      <td style="padding:8px; border:1px solid #ddd;">17.0</td>
-      <td style="padding:8px; border:1px solid #ddd;">1.5</td>
-      <td style="padding:8px; border:1px solid #ddd;">6.8</td>
-      <td style="padding:8px; border:1px solid #ddd;">3.7</td>
-    </tr>
-    <tr align="center">
-      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>DICDet-S</b></td>
-      <td style="padding:8px; border:1px solid #ddd;">42.7</td>
-      <td style="padding:8px; border:1px solid #ddd;">25.8</td>
-      <td style="padding:8px; border:1px solid #ddd;">35.0</td>
-      <td style="padding:8px; border:1px solid #ddd;">20.4</td>
-      <td style="padding:8px; border:1px solid #ddd;">5.3</td>
-      <td style="padding:8px; border:1px solid #ddd;">22.7</td>
-      <td style="padding:8px; border:1px solid #ddd;">4.7</td>
-    </tr>
-    <tr align="center">
-      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>DICDet-M</b></td>
-      <td style="padding:8px; border:1px solid #ddd;">46.2</td>
-      <td style="padding:8px; border:1px solid #ddd;">28.4</td>
-      <td style="padding:8px; border:1px solid #ddd;">37.7</td>
-      <td style="padding:8px; border:1px solid #ddd;">22.2</td>
-      <td style="padding:8px; border:1px solid #ddd;">16.4</td>
-      <td style="padding:8px; border:1px solid #ddd;">71.7</td>
-      <td style="padding:8px; border:1px solid #ddd;">6.4</td>
-    </tr>
-    <tr align="center">
-      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>DICDet-L</b></td>
-      <td style="padding:8px; border:1px solid #ddd;">47.5</td>
-      <td style="padding:8px; border:1px solid #ddd;">29.4</td>
-      <td style="padding:8px; border:1px solid #ddd;">38.5</td>
-      <td style="padding:8px; border:1px solid #ddd;">22.8</td>
-      <td style="padding:8px; border:1px solid #ddd;">28.9</td>
-      <td style="padding:8px; border:1px solid #ddd;">126.2</td>
-      <td style="padding:8px; border:1px solid #ddd;">8.4</td>
-    </tr>
-    <tr align="center">
-      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;"><b>DICDet-X</b></td>
-      <td style="padding:8px; border:1px solid #ddd;">49.1</td>
-      <td style="padding:8px; border:1px solid #ddd;">30.8</td>
-      <td style="padding:8px; border:1px solid #ddd;">40.3</td>
-      <td style="padding:8px; border:1px solid #ddd;">24.1</td>
-      <td style="padding:8px; border:1px solid #ddd;">37.3</td>
-      <td style="padding:8px; border:1px solid #ddd;">166.3</td>
-      <td style="padding:8px; border:1px solid #ddd;">10.9</td>
-    </tr>
-  </tbody>
-</table>
+| Model | $\text{mAP}^{\text{val}}_{50}$(%) | $\text{mAP}^{\text{val}}_{50:95}$(%) | $\text{mAP}^{\text{test}}_{50}$(%) | $\text{mAP}^{\text{test}}_{50:95}$(%) | Params(M) | FLOPs(G) | Latency(ms) |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **DICDet-N** | 36.6 | 21.7 | 29.6 | 17.0 | 1.5 | 6.8 | 3.7 |
+| **DICDet-S** | 42.7 | 25.8 | 35.0 | 20.4 | 5.3 | 22.7 | 4.7 |
+| **DICDet-M** | 46.2 | 28.4 | 37.7 | 22.2 | 16.4 | 71.7 | 6.4 |
+| **DICDet-L** | 47.5 | 29.4 | 38.5 | 22.8 | 28.9 | 126.2 | 8.4 |
+| **DICDet-X** | 49.1 | 30.8 | 40.3 | 24.1 | 37.3 | 166.3 | 10.9 |
 
 ## Install
 
