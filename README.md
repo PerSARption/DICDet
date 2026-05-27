@@ -18,19 +18,19 @@ This is an official implementation of DICDet: **One Size Doesn't Fit All: Divide
 <table style="width:100%; text-align:center; border-collapse:collapse;">
   <thead>
     <tr>
-      <th style="padding:8px; border:1px solid #ddd; white-space:nowrap;">Model</th>
-      <th style="padding:8px; border:1px solid #ddd; white-space:nowrap;">mAP<sup>val</sup><sub>50</sub>(%)</th>
-      <th style="padding:8px; border:1px solid #ddd; white-space:nowrap;">mAP<sup>val</sup><sub>50:95</sub>(%)</th>
-      <th style="padding:8px; border:1px solid #ddd; white-space:nowrap;">mAP<sup>test</sup><sub>50</sub>(%)</th>
-      <th style="padding:8px; border:1px solid #ddd; white-space:nowrap;">mAP<sup>test</sup><sub>50:95</sub>(%)</th>
-      <th style="padding:8px; border:1px solid #ddd; white-space:nowrap;">Params(M)</th>
-      <th style="padding:8px; border:1px solid #ddd; white-space:nowrap;">FLOPs(G)</th>
-      <th style="padding:8px; border:1px solid #ddd; white-space:nowrap;">Latency(ms)</th>
+      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">Model</th>
+      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">mAP<sup>val</sup><sub>50</sub>(%)</th>
+      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">mAP<sup>val</sup><sub>50:95</sub>(%)</th>
+      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">mAP<sup>test</sup><sub>50</sub>(%)</th>
+      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">mAP<sup>test</sup><sub>50:95</sub>(%)</th>
+      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">Params(M)</th>
+      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">FLOPs(G)</th>
+      <th style="padding:8px; border:1px solid #ddd; font-weight:normal; white-space:nowrap;">Latency(ms)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="padding:8px; border:1px solid #ddd;">DICDet-N</td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;">DICDet-N</td>
       <td style="padding:8px; border:1px solid #ddd;">36.6</td>
       <td style="padding:8px; border:1px solid #ddd;">21.7</td>
       <td style="padding:8px; border:1px solid #ddd;">29.6</td>
@@ -40,7 +40,7 @@ This is an official implementation of DICDet: **One Size Doesn't Fit All: Divide
       <td style="padding:8px; border:1px solid #ddd;">3.7</td>
     </tr>
     <tr>
-      <td style="padding:8px; border:1px solid #ddd;">DICDet-S</td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;">DICDet-S</td>
       <td style="padding:8px; border:1px solid #ddd;">42.7</td>
       <td style="padding:8px; border:1px solid #ddd;">25.8</td>
       <td style="padding:8px; border:1px solid #ddd;">35.0</td>
@@ -50,7 +50,7 @@ This is an official implementation of DICDet: **One Size Doesn't Fit All: Divide
       <td style="padding:8px; border:1px solid #ddd;">4.7</td>
     </tr>
     <tr>
-      <td style="padding:8px; border:1px solid #ddd;">DICDet-M</td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;">DICDet-M</td>
       <td style="padding:8px; border:1px solid #ddd;">46.2</td>
       <td style="padding:8px; border:1px solid #ddd;">28.4</td>
       <td style="padding:8px; border:1px solid #ddd;">37.7</td>
@@ -60,7 +60,7 @@ This is an official implementation of DICDet: **One Size Doesn't Fit All: Divide
       <td style="padding:8px; border:1px solid #ddd;">6.4</td>
     </tr>
     <tr>
-      <td style="padding:8px; border:1px solid #ddd;">DICDet-L</td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;">DICDet-L</td>
       <td style="padding:8px; border:1px solid #ddd;">47.5</td>
       <td style="padding:8px; border:1px solid #ddd;">29.4</td>
       <td style="padding:8px; border:1px solid #ddd;">38.5</td>
@@ -70,7 +70,7 @@ This is an official implementation of DICDet: **One Size Doesn't Fit All: Divide
       <td style="padding:8px; border:1px solid #ddd;">8.4</td>
     </tr>
     <tr>
-      <td style="padding:8px; border:1px solid #ddd;">DICDet-X</td>
+      <td style="padding:8px; border:1px solid #ddd; white-space:nowrap;">DICDet-X</td>
       <td style="padding:8px; border:1px solid #ddd;">49.1</td>
       <td style="padding:8px; border:1px solid #ddd;">30.8</td>
       <td style="padding:8px; border:1px solid #ddd;">40.3</td>
