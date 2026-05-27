@@ -15,7 +15,7 @@ This is an official implementation of DICDet: **One Size Doesn't Fit All: Divide
 
 ### DICDet Performance on VisDrone2019-DET
 
-| Model | mAP<sup>val<sub>50</sub></sup><br>(%) | mAP<sup>val<sub>50:95</sub></sup><br>(%) | mAP<sup>test<sub>50</sub></sup><br>(%) | mAP<sup>test<sub>50:95</sub></sup><br>(%) | Params<br>(M) | FLOPs<br>(G) | Latency<br>(ms) |
+| Model | $\boldsymbol{mAP}^{\boldsymbol{val}}_{\boldsymbol{50}}$<br>(%) | $\boldsymbol{mAP}^{\boldsymbol{val}}_{\boldsymbol{50:95}}$<br>(%) | $\boldsymbol{mAP}^{\boldsymbol{test}}_{\boldsymbol{50}}$<br>(%) | $\boldsymbol{mAP}^{\boldsymbol{test}}_{\boldsymbol{50:95}}$<br>(%) | Params<br>(M) | FLOPs<br>(G) | Latency<br>(ms) |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **DICDet-N** | 36.6 | 21.7 | 29.6 | 17.0 | 1.5 | 6.8 | 3.7 |
 | **DICDet-S** | 42.7 | 25.8 | 35.0 | 20.4 | 5.3 | 22.7 | 4.7 |
