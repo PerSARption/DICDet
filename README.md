@@ -2,6 +2,8 @@
 <h1>DICDet: One Size Doesn't Fit All: Divide-and-Conquer Detector<br>for UAV Images</h1>
 </div>
 
+[Paper]()
+
 ## Contents
 - [Introduction](#introduction)
 - [Install](#install)
@@ -79,8 +81,6 @@ For DOTA-v1.0 dataset, please select the config file `ultralytics/cfg/datasets/D
 
 ## Train
 
-### Training
-
 1. Modify the dataset config to point to your data following the steps in **Data Prepare** part.
 
 2. Set the model config and dataset config in `train.py`:
@@ -96,14 +96,14 @@ model.train(data='ultralytics/cfg/datasets/VisDrone2019-DET.yaml', ...)
 python train.py
 ```
 
-### Test
+## Test
 
-1. Modify the dataset config to point to your data following the steps in **Data Prepare** part..
+1. Modify the dataset config to point to your data following the steps in **Data Prepare** part.
 2. Set the model weight and dataset config in `test.py`:
 
 ```python
-model = YOLO("...best.pt")  
-model.test(data='ultralytics/cfg/datasets/VisDrone2019-DET.yaml', ...)
+model = YOLO("...best.pt")
+model.val(data='ultralytics/cfg/datasets/VisDrone2019-DET.yaml', ...)
 ```
 
 3. Run the script:
