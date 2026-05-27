@@ -25,7 +25,7 @@ This is an official implementation of DICDet: **One Size Doesn't Fit All: Divide
 
 ## Install
 
-Recommended Environment
+Recommended Environment:
 - Python 3.8
 - CUDA 11.7
 - PyTorch 1.13.0
